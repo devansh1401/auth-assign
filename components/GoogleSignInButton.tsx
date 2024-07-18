@@ -110,7 +110,7 @@ const GoogleSignInButton = () => {
 
   useGoogleOneTapLogin({
     onSuccess: handleLoginSuccess,
-    onError: (error) => console.log('One Tap Login Failed:', error),
+    onError: () => console.log('One Tap Login Failed'),
   });
 
   const handleLogout = () => {
